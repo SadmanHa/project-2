@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(2, 2, 24); */
+}
+.icon ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.icon ul li {
+    margin: 0px 12px;
+
+}
+.icon ul li  a {
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 20px;
+    width: 130px;
+    height: 38px;
+    background-color: #2258c4;
+    border-radius: 4px;
+    transition: 0.9s;
+    text-decoration: none;
+
+}
+.icon ul li:nth-child(2) a {
+    background-color: #34af23;
+}
+.icon ul li:nth-child(3) a {
+    background-color: #1da1f2;
+}
+.icon ul li:nth-child(4) a {
+    background-color: #ff4500;
+}
+.icon ul li:nth-child(5) a {
+    background-color: #c92228;
+}
+.icon ul li  a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #183d86;
+    height: 100%;
+    width: 26%;
+    border-radius: 4px;
+    transition: 0.5s;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+}
+.icon ul li:nth-child(2)  a::before {
+    background-color: #1a6810;   
+}
+.icon ul li:nth-child(3)  a::before {
+    background-color: #0976b9;   
+}
+.icon ul li:nth-child(4)  a::before {
+    background-color: #d3420d;   
+}
+.icon ul li:nth-child(5)  a::before {
+    background-color: #9b1418;   
+}
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    transform: translate(47px,10px);
+    display: block;
+}
+
+.icon ul li a span.icon {
+    position: absolute;
+    transform: translate(9px,8px);
+    text-align: center;
+}
+.icon ul li  a:hover::before{
+    width: 100%;
+    border-radius: 4px;
+}
+.icon ul li  a:hover {
+    box-shadow: 0px 0px 15px gray;
+    text-shadow: 0px 0px 5px gray;
+}
